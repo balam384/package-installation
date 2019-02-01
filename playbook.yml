@@ -1,8 +1,8 @@
 ---
 - name: packages installing
 - hosts: all
-  become: yes
-  become_method: sudo
+  #become: yes
+  #become_method: sudo
   gather_facts: no
   vars:
     - my_pkgs:
