@@ -1,9 +1,9 @@
 ---
 - name: packages 
 - hosts: all
-  become: yes
-  become_method: sudo
-  gather_facts: no
+  # become: yes
+  # become_method: sudo
+#  gather_facts: no
   # vars:
   #   - my_pkgs:
   #     - sublime-text
