@@ -1,13 +1,13 @@
 ---
-- name: packages 
-- hosts: all
-  # become: yes
-  # become_method: sudo
-#  gather_facts: no
-  # vars:
-  #   - my_pkgs:
-  #     - sublime-text
-  #     - google-chrome-stable
+- name: packages
+  hosts: all
+  become: yes
+  become_method: sudo
+  gather_facts: no
+  vars:
+    - my_pkgs:
+      - sublime-text
+      - google-chrome-stable
 
   tasks:
   - name: Install GPG key for SubLimeText
